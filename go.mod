@@ -2,7 +2,7 @@ module github.com/UnicornWishlist/UnicornServer
 
 go 1.24.2
 
-require github.com/nikonov1101/colors.go v0.0.0-20250420055047-e8318b6d1566
+require github.com/nikonov1101/colors.go v0.0.0-20250421095700-cfab4cd412d1
 
 require (
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
