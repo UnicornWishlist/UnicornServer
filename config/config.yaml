@@ -2,3 +2,9 @@ server:
   host: localhost
   port: 8080
 env: development
+database:
+  host: localhost
+  port: 5432
+  username: postgres
+  password: password
+  database: unicorn

@@ -13,13 +13,22 @@ const (
 )
 
 type Config struct {
-	Server ServerConfig `yaml:"server"`
-	Env    string       `yaml:"env"`
+	Server   ServerConfig   `yaml:"server"`
+	Env      string         `yaml:"env"`
+	Database DatabaseConfig `yaml:"database"`
 }
 
 type ServerConfig struct {
 	Host string `yaml:"host"`
 	Port int    `yaml:"port"`
+}
+
+type DatabaseConfig struct {
+	Host     string `yaml:"host"`
+	Port     int    `yaml:"port"`
+	Username string `yaml:"username"`
+	Password string `yaml:"password"`
+	Database string `yaml:"database"`
 }
 
 func (c *Config) validate() error {
